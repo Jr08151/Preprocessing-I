@@ -167,6 +167,7 @@ p {
 }
 .intro {
   width: 1000px;
+  align-self: flex-start;
   margin: 0 auto;
 }
 .intro {
@@ -189,27 +190,9 @@ p {
   padding-bottom: 20px;
 }
 .work-history {
+  justify-content: stretch;
   margin-bottom: 0px;
   border-bottom: 1px;
-}
-.middle-content h2 {
-  padding: 0 2%;
-  margin-bottom: 0;
-}
-.middle-content .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.middle-content .boxes .box {
-  width: 12.5%;
-  height: 100px;
-  background: black;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .bottom-content {
   display: flex;
