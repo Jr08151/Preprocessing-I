@@ -189,8 +189,8 @@ p {
   padding-bottom: 20px;
 }
 .work-history {
-  margin-bottom: 20px;
-  border-bottom: 1px dashed black;
+  margin-bottom: 0px;
+  border-bottom: 1px;
 }
 .middle-content h2 {
   padding: 0 2%;

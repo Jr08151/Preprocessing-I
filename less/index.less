@@ -47,22 +47,29 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+.default-display() {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.intro-fonts() {
+	font-size: 40px;
+	font-style: arial Black;
+}
+@theme-color: #999;
 /* Set every element's box-sizing to border-box */
 .intro h2 {
-	font-size: 40px;
-	font-style: arial Black;
+	.intro-fonts();
   }
   .work-history h2 {
-	font-size: 40px;
-	font-style: arial Black;
+	.intro-fonts();
   }
   table {
 	border-collapse: collapse;
   }
   td,
   th {
-	border: 3px solid #999;
+	border: 3px solid @theme-color;
 	padding: 0.5rem;
 	text-align: left;
   }
@@ -92,16 +99,12 @@ table {
 	margin: 0 auto;
   }
   .intro {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+	.default-display();
 	justify-content: flex-start;
 	margin-bottom: 20px;
   }
   .skills {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+	.default-display();
 	justify-content: space-evenly;
 	margin-bottom: 20px;
   }
@@ -111,8 +114,8 @@ table {
 	padding-bottom: 20px;
   }
   .work-history {
-	margin-bottom: 20px;
-	border-bottom: 1px dashed black;
+	margin-bottom: 0px;
+	border-bottom: 1px 
   }
   .middle-content h2 {
 	padding: 0 2%;
