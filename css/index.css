@@ -227,3 +227,8 @@ footer {
   color: white;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
